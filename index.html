@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Question of the year</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="style.css">
+</head>
+
+<body>
+    <div class="Coontente">
+        <img src="giphy.gif" width="400" height="300" style="border-radius: 20px" />
+        <p class="questin">Will you be my valentine?</p>
+    </div>
+
+    <div class="elButtones">
+        <button id="WeGoTHer!" style="background-color: rgba(0, 194, 0, 0.904); color: white;"
+            onclick="Ridericttootherone()">Yes</button>
+        <button id="NEGATIVE" onclick="CheckAgin(this)"
+            style="background-color: rgba(153, 0, 0, 0.904); color: white;">No</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var ListOfMessagis = [
+        "No",
+        "Are you sure?",
+        "Think again",
+        "Maybe one more try?",
+        "Please stop",
+        "What about now?",
+        "Whyy??",
+        "Hello??????",
+        "You're still going?",
+        "Just press yes PLS",
+        "UWU",
+        "Okay okay, listen to me. stop!",
+        "<- This button",
+        "Let's just start over."
+    ]
+
+    var int = 0;
+    var size = 20;
+
+    function CheckAgin(btn) {
+        if (int < ListOfMessagis.length - 1) {
+            int++;
+        } else {
+            window.location.href = "";
+        }
+
+        btn.innerHTML = ListOfMessagis[int];
+
+        document.getElementById("WeGoTHer!").style.fontSize = size + (int * 25) + "px";
+    }
+
+    function Ridericttootherone() {
+        window.location.href = 'Mine.html';
+    }
+</script>

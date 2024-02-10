@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    background: rgb(197, 197, 197);
+    font-family: 'Poppins', sans-serif;
+}
+
+.Coontente {
+    padding-top: 10vh;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    width: 100%;
+    text-align: center;
+}
+
+.questin {
+    color: rgb(209, 0, 0);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #861414;
+}
+
+.elButtones {
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
